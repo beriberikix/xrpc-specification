@@ -67,7 +67,7 @@ If present, parameters for the rpc call MUST be provided as a Structured value. 
 
 When a rpc call is made, the Server MUST reply with a Response, except for in the case of Notifications. The Response is expressed as a single Object, with the following members:
 
-**jsonrpc**
+**xrpc**
 
 > A String specifying the version of the xRPC protocol. MUST be exactly "1.0".
 
