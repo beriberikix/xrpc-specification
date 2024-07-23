@@ -22,7 +22,7 @@ One implementation of this specification could easily fill both of those roles, 
 
 ## 3 Compatibility
 
-xRPC 1.0 Request objects and Response objects may not work with existing xRPC 1.0 clients or servers or any JSON-RPC implementations. However, it is easy to distinguish implementations and versions as xRPC always has a member named "xrpc" with a String value of "1.0".
+xRPC 1.0 Request objects and Response objects may not work with existing xRPC clients or servers other than version 1.0 or any JSON-RPC implementations. However, it is easy to distinguish implementations and versions as xRPC always has a member named "xrpc" with a String value of "1.0".
 
 ## 4 Request Object
 
@@ -125,11 +125,11 @@ The error codes from and including -32768 to -32000 are reserved for pre-defined
 
 | code | message | meaning |
 | ---- | ------- | ------- |
-| -32700 | Parse error | 	Invalid JSON was received by the server. An error occurred on the server while parsing the JSON text. |
-| -32600 | Invalid Request |  The JSON sent is not a valid Request object. |
+| -32700 | Parse error | 	Invalid data was received by the server. An error occurred on the server while parsing. |
+| -32600 | Invalid Request |  The data sent is not a valid Request object. |
 | -32601 | Method not found	| The method does not exist / is not available. |
 | -32602 | Invalid params	| Invalid method parameter(s). |
-| -32603 | Internal error	| Internal JSON-RPC error. |
+| -32603 | Internal error	| Internal xRPC error. |
 | -32000 to -32099 | Server error	| Reserved for implementation-defined server-errors. |
 
 The remainder of the space is available for application defined errors.
