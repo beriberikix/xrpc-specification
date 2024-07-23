@@ -22,7 +22,7 @@ One implementation of this specification could easily fill both of those roles, 
 
 ## 3 Compatibility
 
-xRPC 1.0 Request objects and Response objects may not work with existing xRPC clients or servers other than version 1.0 or any JSON-RPC implementations. However, it is easy to distinguish implementations and versions as xRPC always has a member named "xrpc" with a String value of "1.0".
+xRPC 1.0 Request objects and Response objects may not work with existing xRPC clients or servers other than version 1.0 or any JSON-RPC implementation. However, it is easy to distinguish implementations and versions as xRPC always has a member named "xrpc" with a String value of "1.0".
 
 ## 4 Request Object
 
